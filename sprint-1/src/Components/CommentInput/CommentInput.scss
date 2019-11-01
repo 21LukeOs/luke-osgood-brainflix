@@ -1,0 +1,57 @@
+@import "../../variables.scss";
+@import "../../fonts.scss";
+@import "../../mixins.scss";
+
+
+
+.join-conv {
+  padding: 0 16px 40px 16px;
+  
+
+  &__title {
+    font-family: "Avenir Next Demi";
+    margin: 0 0 32px 0;
+  }
+
+  &__form {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid $themecolor4;
+  }
+
+  &__input-pic {
+    width: 48px;
+    height: 48px;
+    margin: 24px 16px 0 0;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: left;
+  }
+
+  &__sub-title {
+    font-size: 12px;
+    color: $themecolor2;
+  }
+
+  &__input {
+    width: 100%;
+    height: 92px;
+    padding: 12px;
+    outline: transparent;
+    border: 2px solid $themecolor5;
+    border-radius: 4px;
+    margin-top: 4px;
+  }
+
+  &__comment-button {
+    background: $themecolor5;
+    margin: 16px 0 24px 0;
+    padding: 16px;
+    width: 100%;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-family: "Avenir Next Demi";
+    font-size: 16px;
+  }
+}
