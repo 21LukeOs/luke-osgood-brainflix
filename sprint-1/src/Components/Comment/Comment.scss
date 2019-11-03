@@ -1,0 +1,34 @@
+@import "../../variables.scss";
+@import "../../fonts.scss";
+@import "../../mixins.scss";
+
+
+
+.list-item {
+  display: flex;
+  padding: 24px 0 24px 0;
+  border-bottom: 1px solid $themecolor4;
+
+  &__usr-img {
+    margin: 0 16px 0 0;
+  }
+
+  &__name-date {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &__name {
+    margin: 0;
+    font-size: 13px;
+  }
+
+  &__date {
+    color: $themecolor2;
+  }
+
+  &__comment {
+    margin-top: 16px;
+  }
+}

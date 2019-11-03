@@ -1,12 +1,33 @@
 import React from 'react';
-import './Article.scss';
+import './MainVideo.scss';
+import VideoImg from '../../Assets/Images/video-list-0.jpg';
+import Play from '../../Assets/Icons/Icon-play.svg';
+import FullScreen from '../../Assets/Icons/Icon-fullscreen.svg';
+import Volume from '../../Assets/Icons/Icon-volume.svg';
 import Likes from '../../Assets/Icons/Icon-likes.svg';
 import Views from '../../Assets/Icons/Icon-views.svg';
 
 
-class Article extends React.Component {
-  render() { 
+class MainVideo extends React.Component {
+  render() {
     return (
+      <>
+      <section className="hero">
+        <video className="hero__video" src="" poster={VideoImg}></video>
+        <div className="hero__video-controls">
+          <div className="hero__play hero__vid-con">
+            <img src={Play} alt=""/>
+          </div>
+          <div className="hero__progress-bar hero__vid-con">
+            <div className="hero__prog-line"></div>
+            <img src="" alt=""/>
+          </div>
+          <div className="hero__fullscn-vol hero__vid-con">
+            <img className="hero__fullscn" src={FullScreen} alt=""/>
+            <img className="hero__vol" src={Volume} alt=""/>
+          </div>
+        </div>
+      </section>
       <article className="article">
         <div className="article__heading">
           <h1 className="article__header">BMX Rampage: 2018 Highlights</h1>
@@ -23,8 +44,9 @@ class Article extends React.Component {
         On a gusty day in Southern Utah, a group of 25 daring mountain bikers blew the doors off what is possible on two wheels, unleashing some of the biggest moments the sport has ever seen. While mother nature only allowed for one full run before the conditions made it impossible to ride, that was all that was needed for event veteran Kyle Strait, who won the event for the second time -- eight years after his ﬁrst Red Cow Rampage title
         </p>
       </article>
+      </>
     );
   }
 }
 
-export default Article;
+export default MainVideo;
