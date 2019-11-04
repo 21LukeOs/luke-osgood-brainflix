@@ -5,10 +5,19 @@
 .video-list {
   padding: 0 16px 0 16px;
 
+  @include tablet() {
+    padding: 0 24px 0 24px;
+    max-width: 45%;
+  }
+
   &__title {
     margin: 0 0 40px 0;
     font-size: 12px;
     color: $themecolor2;
+
+    @include desktop() {
+      margin: 40px 0;
+    }
   }
 
   &__list {

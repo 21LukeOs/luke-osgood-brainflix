@@ -15,11 +15,14 @@ class CommentInput extends React.Component {
           </div>
           <div className="join-conv__lab-in">
             <label className="join-conv__sub-title">JOIN THE CONVERSATION</label>
-            <textarea className="join-conv__input" type="text"/>
-            <Button name="COMMENT" />
+            <div className="join-conv__text-butt">
+              <textarea className="join-conv__input" type="text"/>
+              <div className="join-conv__button-wrap">
+                <Button name="COMMENT" />
+              </div>
+            </div>
           </div>
         </form>
-
       </section>
     );
   }

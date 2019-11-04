@@ -12,7 +12,7 @@ class CommentList extends React.Component {
     const comments = this.props.comments;
 
     const commentArray = comments.map((comment) => {
-      return <Comment key={comment.id} name={comment.name} date={comment.date} comment={comment.comment}/>
+      return <Comment key={comment.id} name={comment.name} date={comment.timestamp} comment={comment.comment}/>
     });
 
     return (

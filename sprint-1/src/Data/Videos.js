@@ -11,12 +11,12 @@ import vid8 from '../Assets/Images/video-list-8.jpg';
 
 // Side Video Object
 const sideVideo = [
-  {
-    id: 'vid-one', 
-    title: 'BMX Rampage: 2018 Highlights', 
-    channel: 'Red Cow', 
-    image: vid0
-  },
+  // {
+  //   id: 'vid-one', 
+  //   title: 'BMX Rampage: 2018 Highlights', 
+  //   channel: 'Red Cow', 
+  //   image: vid0
+  // },
   {
     id: 'vid-two', 
     title: 'Become A Travel Pro In One Easy Lesson', 
@@ -70,16 +70,16 @@ const sideVideo = [
 
 //Main Video Object
 const mainVideo = {
-  id: 'type of <string>',
-  title: 'type of <string>',
+  id: 'vid-one',
+  title: 'BMX Rampage: 2018 Highlights',
   description: 'type of <string>',
-  channel: 'type of <string>',
-  image: 'type of <string>',
-  views: 'type of <string>',
-  likes: 'type of <string>',
-  duration: 'type of <string>',
+  channel: 'Red Cow',
+  image: vid0,
+  views: '1,001,023',
+  likes: '110,985',
+  duration: '0:00 / 0:42',
   video: 'type of <string>',
-  timestamp: 'type of <number>',
+  timestamp: '12/18/2018',
   comments: [
     {
       id: '20384597',

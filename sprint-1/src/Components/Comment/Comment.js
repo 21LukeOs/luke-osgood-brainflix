@@ -12,7 +12,7 @@ class Comment extends React.Component {
         <div className="list-item__usr-img">
           <UserImage />
         </div>
-        <div>
+        <div className="list-item__n-d-c">
           <div className="list-item__name-date">
             <h3 className="list-item__name">{this.props.name}</h3>
             <p className="list-item__date">{this.props.date}</p>

@@ -13,10 +13,18 @@
     margin: 0 16px 0 0;
   }
 
+  &__n-d-c {
+    width: 100%;
+  }
+
   &__name-date {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+
+    @include tablet() {
+      justify-content: flex-start;
+    }
   }
 
   &__name {
@@ -26,6 +34,10 @@
 
   &__date {
     color: $themecolor2;
+
+    @include tablet() {
+      margin-left: 16px;
+    }
   }
 
   &__comment {

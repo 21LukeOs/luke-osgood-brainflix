@@ -1,9 +1,20 @@
 @import "../../variables.scss";
 @import "../../fonts.scss";
+@import "../../mixins.scss";
 
 .header {
   padding: 16px;
 
+  @include tablet() {
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @include desktop() {
+    padding: 16px 180px;
+  }
 
   &__button-img {
     margin-right: 16px;
@@ -14,10 +25,28 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+
+    @include tablet() {
+      align-items: center;
+    }
+  }
+
+  &__form {
+
+    @include tablet() {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 468px;
+    }
   }
 
   &__search-wrap {
     position: relative;
+
+    @include tablet() {
+      width: 248px;
+    }
   }
 
   &__search-bar {
@@ -42,11 +71,19 @@
     margin-top: 8px;
     display: flex;
     align-items: center;
+
+    @include tablet() {
+      margin-top: 0;
+    }
   }
 
   
 
   &__upload-pic {
     margin-left: 16px;
+
+    @include tablet() {
+      margin-left: 24px;
+    }
   }
 }

@@ -1,0 +1,20 @@
+@import "../../mixins.scss";
+
+.main {
+
+
+  &__article-video {
+
+    @include desktop() {
+      padding: 0 180px;
+      display: flex;
+    }
+  }
+
+  &__article-comment {
+    
+    @include desktop() {
+      width: 75%;
+    }
+  }
+}
