@@ -12,6 +12,9 @@ import Videos from '../../Data/Videos';
 class Main extends React.Component {
 
   render() {
+
+    const sideVideo = Videos.sideVideo.filter((video) => video.id !== Videos.mainVideo.id);
+
     return (
       <>
       <Header />
@@ -23,7 +26,7 @@ class Main extends React.Component {
           <CommentInput />
           <CommentList comments={Videos.mainVideo.comments} />
         </div>
-        <SideVideos videos={Videos.sideVideo} />
+        <SideVideos videos={sideVideo} />
       </div>
       </>
     );

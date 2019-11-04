@@ -11,12 +11,12 @@ import vid8 from '../Assets/Images/video-list-8.jpg';
 
 // Side Video Object
 const sideVideo = [
-  // {
-  //   id: 'vid-one', 
-  //   title: 'BMX Rampage: 2018 Highlights', 
-  //   channel: 'Red Cow', 
-  //   image: vid0
-  // },
+  {
+    id: 'vid-one', 
+    title: 'BMX Rampage: 2018 Highlights', 
+    channel: 'Red Cow', 
+    image: vid0
+  },
   {
     id: 'vid-two', 
     title: 'Become A Travel Pro In One Easy Lesson', 
