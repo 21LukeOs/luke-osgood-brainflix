@@ -11,20 +11,27 @@ import Videos from '../../Data/Videos';
 
 class Main extends React.Component {
 
+  constructor() {
+    super()
+    this.state = {
+      Videos
+    }
+  }
+
   render() {
 
-    const sideVideo = Videos.sideVideo.filter((video) => video.id !== Videos.mainVideo.id);
+    const sideVideo = this.state.Videos.sideVideo.filter((video) => video.id !== this.state.Videos.mainVideo.id);
 
     return (
       <>
       <Header />
-      <MainVideo image={Videos.mainVideo.image} duration={Videos.mainVideo.duration} />
+      <MainVideo image={this.state.Videos.mainVideo.image} duration={this.state.Videos.mainVideo.duration} />
       <div className="main__article-video">
         <div className="main__article-comment">
-          <Article title={Videos.mainVideo.title} author={Videos.mainVideo.channel} date={Videos.mainVideo.timestamp} 
-          views={Videos.mainVideo.views} likes={Videos.mainVideo.likes} />
+          <Article title={this.state.Videos.mainVideo.title} author={this.state.Videos.mainVideo.channel} date={this.state.Videos.mainVideo.timestamp} 
+          views={this.state.Videos.mainVideo.views} likes={this.state.Videos.mainVideo.likes} />
           <CommentInput />
-          <CommentList comments={Videos.mainVideo.comments} />
+          <CommentList comments={this.state.Videos.mainVideo.comments} />
         </div>
         <SideVideos videos={sideVideo} />
       </div>
