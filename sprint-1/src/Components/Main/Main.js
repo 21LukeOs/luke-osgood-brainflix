@@ -25,7 +25,7 @@ class Main extends React.Component {
     return (
       <>
       <Header />
-      <MainVideo image={this.state.Videos.mainVideo.image} duration={this.state.Videos.mainVideo.duration} />
+      <MainVideo image={this.state.Videos.mainVideo.image} duration={`0:00 / ${this.state.Videos.mainVideo.duration}`} />
       <div className="main__article-video">
         <div className="main__article-comment">
           <Article title={this.state.Videos.mainVideo.title} author={this.state.Videos.mainVideo.channel} date={this.state.Videos.mainVideo.timestamp} 

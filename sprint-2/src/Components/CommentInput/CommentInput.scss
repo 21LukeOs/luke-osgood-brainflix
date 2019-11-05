@@ -1,0 +1,89 @@
+@import "../../variables.scss";
+@import "../../fonts.scss";
+@import "../../mixins.scss";
+
+
+
+.join-conv {
+  padding: 0 16px 0 16px;
+  
+  @include tablet() {
+    padding: 0 24px 0 24px;
+  }
+
+  @include desktop() {
+    padding: 0;
+  }
+  
+
+  &__title {
+    font-family: "Avenir Next Demi";
+    margin: 0 0 32px 0;
+  }
+
+  &__form {
+    display: flex;
+    width: 100%;
+    padding-bottom: 24px;
+    border-bottom: 1px solid $themecolor4;
+  }
+
+  &__input-pic {
+    margin: 24px 16px 0 0;
+  }
+
+  &__lab-in {
+    width: 100%;
+
+    @include tablet() {
+      width: 100%;
+    }
+  }
+
+  &__text-butt {
+    width: 100%;
+
+    @include tablet() {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  &__sub-title {
+    font-size: 12px;
+    color: $themecolor2;
+  }
+
+  &__input {
+    width: 100%;
+    height: 92px;
+    padding: 12px;
+    outline: transparent;
+    border: 2px solid $themecolor4;
+    border-radius: 4px;
+    margin: 4px 0 16px 0;
+
+    @include tablet() {
+      margin: 0 16px 0 0;
+      height: auto;
+      width: 440px;
+    }
+
+    @include desktop() {
+      width: 436px;
+    }
+  }
+
+  &__input:focus {
+    border: 2px solid $themecolor5;
+    outline: transparent;
+  }
+
+  &__button-wrap {
+
+    @include tablet() {
+      width: 160px;
+    }
+  }
+}
