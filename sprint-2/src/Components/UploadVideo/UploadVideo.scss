@@ -1,0 +1,83 @@
+@import "../../variables.scss";
+@import "../../fonts.scss";
+@import "../../mixins.scss";
+
+
+h3 {
+  margin: 0;
+}
+
+.upld-vid {
+  padding: 0 16px 24px 16px;
+
+
+  &__title {
+    font-family: "Avenir Next Bold";
+    margin: 24px 0 32px 0;
+  }
+
+  &__vid-thumb {
+    font-size: 12px;
+    color: $themecolor2;
+  }
+
+  &__vid-pre {
+    max-width: 100%;
+    border-radius: 4px;
+    margin: 8px 0 32px 0;
+  }
+
+  &__vid-title {
+    font-size: 12px;
+    color: $themecolor2;
+  }
+
+  &__vid-desc {
+    font-size: 12px;
+    color: $themecolor2;
+  }
+
+  &__add-title {
+    width: 100%;
+    padding: 12px;
+    outline: transparent;
+    border: 2px solid $themecolor4;
+    border-radius: 4px;
+    margin: 4px 0 24px 0;
+    font-family: "Avenir Next Regular";
+  }
+
+  &__add-title:focus {
+    border: 2px solid $themecolor5;
+    outline: transparent;
+  }
+
+  &__add-desc {
+    width: 100%;
+    height: 143px;
+    padding: 12px;
+    outline: transparent;
+    border: 2px solid $themecolor4;
+    border-radius: 4px;
+    margin: 4px 0 32px 0;
+    font-family: "Avenir Next Regular";
+  }
+
+  &__add-desc:focus {
+    border: 2px solid $themecolor5;
+    outline: transparent;
+  }
+
+  &__pub-cncl {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__cancel {
+    font-family: "Avenir Next Demi";
+    color: $themecolor5;
+    font-size: 12px;
+    margin-top: 24px;
+    align-self: center;
+  }
+}

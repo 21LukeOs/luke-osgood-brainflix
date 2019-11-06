@@ -7,6 +7,7 @@ import CommentInput from '../CommentInput/CommentInput.js';
 import CommentList from '../CommentList/CommentList.js';
 import SideVideos from '../SideVideos/SideVideos';
 import Videos from '../../Data/Videos';
+import UploadVideo from '../UploadVideo/UploadVideo';
 
 
 class Main extends React.Component {
@@ -34,6 +35,7 @@ class Main extends React.Component {
         </div>
         <SideVideos videos={sideVideo} />
       </div>
+      <UploadVideo />
       </>
     );
   }
