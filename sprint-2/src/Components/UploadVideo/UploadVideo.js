@@ -13,18 +13,24 @@ class UploadVideo extends React.Component {
       <Header />
       <section className="upld-vid">
         <h1 className="upld-vid__title">Upload Video</h1>
-        <h3 className="upld-vid__vid-thumb">VIDEO THUMBNAIL</h3>
-        <img className="upld-vid__vid-pre" src={VidPre} alt="blue bicycle handlebars from rider's perspective"/>
-        <form className="upld-vid__form" action="">
-          <label className="upld-vid__vid-title">TITLE YOUR VIDEO</label>
-          <input className="upld-vid__add-title" type="text" placeholder="Add a title to your video" />
-          <label className="upld-vid__vid-desc">ADD A VIDEO DESCRIPTION</label>
-          <textarea className="upld-vid__add-desc" name="" placeholder="Add a description of your video" ></textarea>
-          <div className="upld-vid__pub-cncl">
-            <Button name="PUBLISH" />
-            <h3 className="upld-vid__cancel">CANCEL</h3>
+        <div className="upld-vid__flex">
+          <div className="upld-vid__vid-preview">
+            <label className="upld-vid__vid-thumb">VIDEO THUMBNAIL</label>
+            <img className="upld-vid__vid-pre" src={VidPre} alt="blue bicycle handlebars from rider's perspective"/>
           </div>
-        </form>
+          <form className="upld-vid__form" action="">
+            <label className="upld-vid__vid-title">TITLE YOUR VIDEO</label>
+            <input className="upld-vid__add-title" type="text" placeholder="Add a title to your video" />
+            <label className="upld-vid__vid-desc">ADD A VIDEO DESCRIPTION</label>
+            <textarea className="upld-vid__add-desc" name="" placeholder="Add a description of your video" ></textarea>
+          </form>
+        </div>
+        <div className="upld-vid__pub-cncl">
+          <div className="upld-vid__pub-butt">
+            <Button name="PUBLISH" />
+          </div>
+          <h3 className="upld-vid__cancel">CANCEL</h3>
+        </div>
       </section>
       </>
     );

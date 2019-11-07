@@ -3,7 +3,8 @@
 @import "../../mixins.scss";
 
 .header {
-  padding: 16px;
+  padding: 12px 16px 16px 16px;
+  box-shadow: 0px 0.5px 2px $themecolor4;
 
   @include tablet() {
     padding: 16px 24px;
@@ -21,13 +22,14 @@
   }
 
   &__logo-wrap {
-    height: 32px;
+    height: 36px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
 
     @include tablet() {
       align-items: center;
+      // height: auto;
     }
   }
 
