@@ -9,8 +9,8 @@ class App extends React.Component {
   render() { 
     return (
       <div className="not-found">
-        <Link to='/uploadVideo'>
-          <div className="not-found__uturn">
+        <Link to='/'>
+          <div className="not-found__uturn" >
             <img className="not-found__svg" src={Uturn} alt=""/>
             <p className="not-found__text">Take A U-Turn</p>
           </div>

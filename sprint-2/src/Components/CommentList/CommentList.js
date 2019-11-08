@@ -17,7 +17,7 @@ class CommentList extends React.Component {
 
     return (
       <ul className="comment-list">
-        {commentArray}
+        { commentArray }
       </ul>
     );
   }

@@ -70,7 +70,7 @@ const sideVideo = [
 
 //Main Video Object
 const mainVideo = {
-  id: 'vid-one',
+  id: '1af0jruup5gu',
   title: 'BMX Rampage: 2018 Highlights',
   description: 'type of <string>',
   channel: 'Red Cow',
@@ -102,7 +102,7 @@ const mainVideo = {
   ] 
 };
 
-export default {
+export {
   sideVideo,
   mainVideo
 }
