@@ -14,6 +14,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" component={Main} />
           <Route path="/uploadVideo" component={UploadVideo} />
+          <Route path="/:id" component={Main} />
 
           <Route component={NotFound} />
         </Switch>

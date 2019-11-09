@@ -10,7 +10,9 @@ class SideVideos extends React.Component {
     const videos = this.props.videos;
 
     const videoArray = videos.map((video) => {
-      return <SideVid key={video.id} image={video.image} title={video.title} author={video.channel} />
+      return (
+      <SideVid key={video.id} image={video.image} title={video.title} author={video.channel} video={video} />
+      )
     });
 
     return (
