@@ -7,20 +7,13 @@ import Article from '../Article/Article';
 import CommentInput from '../CommentInput/CommentInput.js'; 
 import CommentList from '../CommentList/CommentList.js';
 import SideVideos from '../SideVideos/SideVideos';
-// import { mainVideo } from '../../Data/Videos';
 
 
 const apiKey = `?api_key=<e5af90e0-f7b6-4ffc-8cb6-35c51386cc6c>`;
-const url = `https://project-2-api.herokuapp.com/videos${apiKey}`;
-
-const videoId = `1af0jruup5gu`
-const url2 =`https://project-2-api.herokuapp.com/videos/${videoId}?api_key=<e5af90e0-f7b6-4ffc-8cb6-35c51386cc6c>`;
- 
-const url3 = `https://project-2-api.herokuapp.com/videos/`;
-const api = `?api_key=<e5af90e0-f7b6-4ffc-8cb6-35c51386cc6c>`;
+const url = `https://project-2-api.herokuapp.com/videos`;
+const videoId = `/1af0jruup5gu`;
 
 class Main extends React.Component {
-
   
   state = {
     mainVideo: { comments: [] },
@@ -28,15 +21,13 @@ class Main extends React.Component {
   }
 
   componentDidMount() {
-    Axios.get(url).then((videos) => {
-      // console.log(videos.data);
+    Axios.get(url + apiKey).then((videos) => {
       this.setState({
         sideVideo: videos.data
       });
     });
 
-    Axios.get(url2).then((video) => {
-      console.log(video)
+    Axios.get(url + videoId + apiKey).then((video) => {
       this.setState({
         mainVideo: video.data
       });
@@ -45,16 +36,14 @@ class Main extends React.Component {
 
   componentDidUpdate() {
     if (this.state.mainVideo.id !== this.props.match.params.id) {
-      const Id = this.props.match.params.id;
-      console.log(this.props.match.params.id);
-      Axios.get(url3 + Id + api).then((video) => {
-      console.log(video)
-      this.setState({
-      mainVideo: video.data
+      const Id = `/${this.props.match.params.id}`;
+      Axios.get(url + Id + apiKey).then((video) => {
+        this.setState({
+          mainVideo: video.data
+        });
+      }).catch((error) => {
+        console.log(error);
       });
-    }).catch((error) => {
-      console.log(error);
-    })
     }
   }
 
@@ -67,7 +56,6 @@ class Main extends React.Component {
     return (
       <>
       <Header />
-
       <MainVideo image={image} duration={`0:00 / ${duration}`} />
       <div className="main__article-video">
         <div className="main__article-comment">
