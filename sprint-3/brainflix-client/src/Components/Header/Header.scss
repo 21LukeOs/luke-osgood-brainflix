@@ -1,0 +1,95 @@
+@import "../../variables.scss";
+@import "../../fonts.scss";
+@import "../../mixins.scss";
+
+.header {
+  padding: 12px 16px 16px 16px;
+  box-shadow: 0px 0.5px 2px $themecolor4;
+
+  @include tablet() {
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @include desktop() {
+    padding: 16px 180px;
+  }
+
+  &__button-img {
+    margin-right: 16px;
+  }
+
+  &__logo-wrap {
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    @include tablet() {
+      align-items: center;
+      // height: auto;
+    }
+  }
+
+  &__form {
+
+    @include tablet() {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 468px;
+    }
+  }
+
+  &__search-wrap {
+    position: relative;
+
+    @include tablet() {
+      width: 248px;
+    }
+  }
+
+  &__search-bar {
+    width: 100%;
+    padding: 16px 16px 16px 40px;
+    border: 2px solid $themecolor4;
+    border-radius: 4px;
+  }
+
+  &__search-bar:focus {
+    border: 2px solid $themecolor5;
+    outline: transparent;
+  }
+
+  &__search {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+
+  &__upload {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+
+    @include tablet() {
+      margin-top: 0;
+    }
+  }
+
+  &__button {
+    width: 100%;
+  }
+
+  &__upload-pic {
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+
+    @include tablet() {
+      margin-left: 24px;
+    }
+  }
+}

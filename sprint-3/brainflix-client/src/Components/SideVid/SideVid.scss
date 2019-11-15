@@ -1,0 +1,36 @@
+@import "../../variables.scss";
+@import "../../fonts.scss";
+@import "../../mixins.scss";
+
+
+.video {
+  display: flex;
+  margin-bottom: 24px;
+
+  &__tile {
+    min-width: 120px;
+    max-width: 120px;
+    height: 70px;
+    border-radius: 4px;
+    object-fit: cover;
+    background-color: $themecolor4;
+  }
+
+  &__title-author {
+    margin-left: 16px;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  &__author {
+    margin-top: 16px;
+
+    @include desktop() {
+      margin-top: 12px;;
+    }
+  }
+}

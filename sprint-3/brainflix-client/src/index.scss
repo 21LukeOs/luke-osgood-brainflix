@@ -1,0 +1,17 @@
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
+
+
+html {
+  box-sizing: border-box;
+  font-family: "Avenir Next Regular";
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}

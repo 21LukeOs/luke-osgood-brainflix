@@ -14,6 +14,7 @@ const url = `https://project-2-api.herokuapp.com/videos`;
 const videoId = `/1af0jruup5gu`;
 
 class Main extends React.Component {
+
   
   state = {
     mainVideo: { comments: [] },
@@ -35,7 +36,7 @@ class Main extends React.Component {
   }
 
   componentDidUpdate() {
-    if (this.state.mainVideo.id !== this.props.match.params.id) {
+    if (this.state.mainVideo.id !== this.props.match.params.id && this.props.match.params.id) {
       const Id = `/${this.props.match.params.id}`;
       Axios.get(url + Id + apiKey).then((video) => {
         this.setState({
@@ -43,6 +44,7 @@ class Main extends React.Component {
         });
       }).catch((error) => {
         console.log(error);
+        
       });
     }
   }

@@ -1,0 +1,153 @@
+@import "../../variables.scss";
+@import "../../fonts.scss";
+@import "../../mixins.scss";
+
+
+h3 {
+  margin: 0;
+}
+
+.upld-vid {
+  padding: 0 16px 24px 16px;
+
+
+  @include tablet() {
+    padding: 0 24px 180px 24px;
+  }
+
+  @include desktop() {
+    padding: 0 180px 180px 180px;
+  }
+
+  &__title {
+    font-family: "Avenir Next Bold";
+    padding: 24px 0 32px 0;
+
+    @include tablet() {
+      padding: 48px 0 32px 0;
+      border-bottom: 1px solid $themecolor4;
+    }
+  }
+  
+  &__flex {
+
+    @include desktop() {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__vid-preview {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet() {
+      padding: 40px 0;
+    }
+  }
+
+  &__vid-thumb {
+    font-size: 12px;
+    color: $themecolor2;
+  }
+
+  &__vid-pre {
+    max-width: 100%;
+    border-radius: 4px;
+    margin: 4px 0 32px 0;
+
+    @include tablet() {
+      width: 344px;
+      margin: 4px 0 0 0;
+    }
+  }
+
+  &__form {
+
+    @include desktop() {
+      flex-grow: 2;
+      padding: 40px 0;
+      margin-left: 24px;
+    }
+  }
+
+  &__vid-title {
+    font-size: 12px;
+    color: $themecolor2;
+  }
+
+  &__vid-desc {
+    font-size: 12px;
+    color: $themecolor2;
+  }
+
+  &__add-title {
+    width: 100%;
+    padding: 14px;
+    outline: transparent;
+    border: 2px solid $themecolor4;
+    border-radius: 4px;
+    margin: 4px 0 20px 0;
+    font-family: "Avenir Next Regular";
+  }
+
+  &__add-title:focus {
+    border: 2px solid $themecolor5;
+    outline: transparent;
+  }
+
+  &__add-desc {
+    width: 100%;
+    height: 143px;
+    padding: 12px;
+    outline: transparent;
+    border: 2px solid $themecolor4;
+    border-radius: 4px;
+    margin: 4px 0 32px 0;
+    font-family: "Avenir Next Regular";
+
+    @include tablet() {
+      margin: 4px 0 40px 0;
+    }
+
+    @include desktop() {
+      height: 94px;
+      margin: 4px 0 0 0;
+    }
+  }
+
+  &__add-desc:focus {
+    border: 2px solid $themecolor5;
+    outline: transparent;
+  }
+
+  &__pub-cncl {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet() {
+      flex-direction: row-reverse;
+      padding-top: 40px;
+      border-top: 1px solid $themecolor4;  
+    }
+  }
+
+  &__pub-butt {
+    
+    @include tablet() {
+      width: 160px;
+    }
+  }
+
+  &__cancel {
+    font-family: "Avenir Next Demi";
+    color: $themecolor5;
+    font-size: 12px;
+    margin-top: 24px;
+    align-self: center;
+
+    @include tablet() {
+      margin: 0 48px 0 0;
+    }
+  }
+}

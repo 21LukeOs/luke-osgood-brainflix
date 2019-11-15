@@ -1,0 +1,15 @@
+@import "../../mixins.scss";
+
+.comment-list {
+  list-style: none;
+  padding: 0 16px 40px 16px;
+  margin: 0;
+
+  @include tablet() {
+    padding: 0 24px 40px 24px;
+  }
+
+  @include desktop() {
+    padding: 0 0 40px 0;
+  }
+}

@@ -1,0 +1,46 @@
+@import "../../variables.scss";
+@import "../../fonts.scss";
+@import "../../mixins.scss";
+
+
+
+.list-item {
+  display: flex;
+  padding: 24px 0 24px 0;
+  border-bottom: 1px solid $themecolor4;
+
+  &__usr-img {
+    margin: 0 16px 0 0;
+  }
+
+  &__n-d-c {
+    width: 100%;
+  }
+
+  &__name-date {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    @include tablet() {
+      justify-content: flex-start;
+    }
+  }
+
+  &__name {
+    margin: 0;
+    font-size: 13px;
+  }
+
+  &__date {
+    color: $themecolor2;
+
+    @include tablet() {
+      margin-left: 16px;
+    }
+  }
+
+  &__comment {
+    margin-top: 16px;
+  }
+}
