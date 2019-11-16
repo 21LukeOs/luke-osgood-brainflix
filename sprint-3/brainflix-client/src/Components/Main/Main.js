@@ -9,10 +9,7 @@ import CommentList from '../CommentList/CommentList.js';
 import SideVideos from '../SideVideos/SideVideos';
 
 
-// const apiKey = `?api_key=<e5af90e0-f7b6-4ffc-8cb6-35c51386cc6c>`;
-// const url = `https://project-2-api.herokuapp.com/videos`;
-// const videoId = `/1af0jruup5gu`;
-const url = `http://localhost:8080/`;
+const url = `http://localhost:8080/videos`;
 
 
 class Main extends React.Component {
@@ -30,12 +27,6 @@ class Main extends React.Component {
         sideVideo: videos.data
       });
     });
-
-    // Axios.get(url + videoId + apiKey).then((video) => {
-    //   this.setState({
-    //     mainVideo: video.data
-    //   });
-    // });
   }
 
   componentDidUpdate() {

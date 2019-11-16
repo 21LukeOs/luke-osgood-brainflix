@@ -18,7 +18,7 @@ class UploadVideo extends React.Component {
             <label className="upld-vid__vid-thumb">VIDEO THUMBNAIL</label>
             <img className="upld-vid__vid-pre" src={VidPre} alt="blue bicycle handlebars from rider's perspective"/>
           </div>
-          <form className="upld-vid__form" action="">
+          <form className="upld-vid__form" id="uploadForm">
             <label className="upld-vid__vid-title">TITLE YOUR VIDEO</label>
             <input className="upld-vid__add-title" type="text" placeholder="Add a title to your video" />
             <label className="upld-vid__vid-desc">ADD A VIDEO DESCRIPTION</label>
@@ -27,7 +27,7 @@ class UploadVideo extends React.Component {
         </div>
         <div className="upld-vid__pub-cncl">
           <div className="upld-vid__pub-butt">
-            <Button name="PUBLISH" />
+            <Button type="submit" form="uploadForm" name="PUBLISH" />
           </div>
           <h3 className="upld-vid__cancel">CANCEL</h3>
         </div>

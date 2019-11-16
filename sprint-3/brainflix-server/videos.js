@@ -2,11 +2,10 @@ const express = require('express');
 const data = require('./data');
 
 
-//nested route
 const router = express.Router();
 
 router.get('/', (request, response) => {
-  console.log(data);
+  console.log();
 
 
 
@@ -14,5 +13,4 @@ router.get('/', (request, response) => {
 });
 
 
-//common JS format
 module.exports = router;
