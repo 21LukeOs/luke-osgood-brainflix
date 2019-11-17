@@ -13,15 +13,10 @@ server.use(express.json()); //decode the POST from the client
 
 //routes
 server.use('/videos', videos);
+server.use('/videos/:id', videos);
+server.use('/uploadVideo', videos);
 
-server.get('/videos/:id', (request, response) => {
-  const video = data.find(video => {
-    return video.id === request.params.id
-  })
-  response.send(video)
-})
-
-
-server.listen(8080, () => {
-  console.log('Server is ready');
+const port = process.env.PORT || 8080;
+server.listen(port, () => {
+  console.log(`Server is ready (port: ${port})`);
 });
