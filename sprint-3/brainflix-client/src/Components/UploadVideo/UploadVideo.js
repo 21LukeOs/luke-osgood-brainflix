@@ -10,13 +10,13 @@ class UploadVideo extends React.Component {
 
   handleSubmit(title, description) {
 
-    const request = {
+    const info = {
       "title": title,
       "description": description,
       "image": "https://i.imgur.com/l2Xfgpl.jpg"
     }
 
-    Axios.post('http://localhost:8080/uploadVideo', request).then(response => {
+    Axios.post('http://localhost:8080/uploadVideo', info).then(response => {
       console.log(response);
       
     }).catch(err => {

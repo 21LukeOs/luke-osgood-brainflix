@@ -3,13 +3,14 @@ const data = require('./data');
 //npm install cors
 const cors = require('cors');
 
-const videos = require('./videos');
+const videos = require('./routers/videos');
 
 const server = express();
 
 //middleware
 server.use(cors());
-server.use(express.json()); //decode the POST from the client
+//decode the POST from the client
+server.use(express.json());
 
 //routes
 server.use('/videos', videos);
